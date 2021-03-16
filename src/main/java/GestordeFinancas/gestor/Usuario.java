@@ -8,11 +8,16 @@ package GestordeFinancas.gestor;
 import java.util.ArrayList;
 
 /**
+<<<<<<< HEAD
 
 Nome: Ádrian Pereira Machado Matrícula: 201965001A
 Nome: Gabriel Duque Schiffner Oliveira Matrícula: 201965033A
 Nome: Leonardo de Holanda Matrícula: 201965162A
 
+=======
+ *
+ * @author Adrian
+>>>>>>> 409c42cf5fbe7869588e3fd7411153fb23439e51
  */
 public class Usuario {
 

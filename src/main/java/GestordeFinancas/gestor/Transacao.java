@@ -6,8 +6,11 @@
 package GestordeFinancas.gestor;
 
 /**
- *
- * @author Delage
+
+Nome: Ádrian Pereira Machado Matrícula: 201965001A
+Nome: Gabriel Duque Schiffner Oliveira Matrícula: 201965033A
+Nome: Leonardo de Holanda Matrícula: 201965162A
+
  */
 public abstract class Transacao {
     private float valor; 

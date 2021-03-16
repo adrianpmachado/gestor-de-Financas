@@ -12,6 +12,13 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 
+/**
+
+Nome: Ádrian Pereira Machado Matrícula: 201965001A
+Nome: Gabriel Duque Schiffner Oliveira Matrícula: 201965033A
+Nome: Leonardo de Holanda Matrícula: 201965162A
+
+ */
 public class TelaPrincipal extends javax.swing.JFrame {
 
     /**
