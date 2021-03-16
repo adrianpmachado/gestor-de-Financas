@@ -1,29 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package GestordeFinancas.gestor;
 
-import java.io.BufferedReader;
+import java.io.BufferedReader;		
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.DecimalFormat;
-import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author Delage
- */
+
 public class TelaPrincipal extends javax.swing.JFrame {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/**
      * Creates new form TelaPrincipal
      */
     public TelaPrincipal() {
@@ -201,14 +197,20 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 "Valor", "Operação", "Descrição"
             }
         ) {
-            Class[] types = new Class [] {
+            /**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+			@SuppressWarnings("rawtypes")
+			Class[] types = new Class [] {
                 java.lang.Float.class, java.lang.String.class, java.lang.String.class
             };
             boolean[] canEdit = new boolean [] {
                 false, false, false
             };
 
-            public Class getColumnClass(int columnIndex) {
+            @SuppressWarnings("rawtypes")
+			public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
 
@@ -307,7 +309,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
@@ -490,7 +491,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         Usuario usuario = new Usuario(usuarioSelecionado);
         java.io.File diretorio = new java.io.File(path);
         java.io.File arquivoUsuario = new java.io.File(diretorio, usuario.getNome());
-        float saldo = 0;
         try {
 
             FileReader fileReader = new FileReader(arquivoUsuario);

@@ -5,18 +5,25 @@
  */
 package GestordeFinancas.gestor;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 /**
- *
- * @author Delage
+
+Nome: Ádrian Pereira Machado Matrícula: 201965001A
+Nome: Gabriel Duque Schiffner Oliveira Matrícula: 201965033A
+Nome: Leonardo de Holanda Matrícula: 201965162A
+
  */
 public class Usuario {
 
     private String nome;
     private ArrayList<Transacao> extrato = new ArrayList<Transacao>();
     private float saldo = 0;
+    
+    public Usuario(String nome) {
+        this.nome = nome;
+    }
+    
 
     public ArrayList<Transacao> getExtrato() {
         return extrato;
@@ -44,9 +51,7 @@ public class Usuario {
         this.nome = nome;
     }
 
-    public Usuario(String nome) {
-        this.nome = nome;
-    }
+   
 
     public void calcularSaldo() {
         saldo = 0;
